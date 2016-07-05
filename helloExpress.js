@@ -1,8 +1,8 @@
+const serverinfo = require('./serverinfo');
 var express = require('express');
 var app = express();
-console.log('process.env.PORT', process.env.PORT);
 
-app.listen(3000, function(){
+app.listen(serverinfo.port, function(){
     console.log('Connected!!!');
 })
 
